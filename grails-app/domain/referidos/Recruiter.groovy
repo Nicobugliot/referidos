@@ -1,11 +1,13 @@
 package referidos
 
-class Employee {
+class Recruiter {
     String name
     Long dni
     String contactInformation
     String department
-    List<Referred> referreds
+    List<Postulation> postulations
+
+    static hasMany = [postulations: Postulation]
 
     static constraints = {
     }

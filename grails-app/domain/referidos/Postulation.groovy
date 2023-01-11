@@ -3,10 +3,15 @@ package referidos
 import referidos.enums.PostulationState
 
 class Postulation {
+    PostulationState postulationState
+    Referred referred
+    Vacant vacant
+    Date referredDate
+    Date interviewedDate
+    Boolean accepted
+    Recluter recluter
 
-    private PostulationState postulationState
-    private Referred referred
-    private Vacant vacant
+    static belongsTo = [recluter: Recluter, referred: Referred, vacant: Vacant]
 
     static constraints = {
     }

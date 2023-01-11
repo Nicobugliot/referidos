@@ -1,13 +1,15 @@
 package referidos
 
 class Referred {
-
-    private String name
-    private Long dni
-    private String email
-    private String linkedin
-    private String city
-    private Employee employee
+    String name
+    Long dni
+    String email
+    String linkedin
+    String city
+    Employee employee
+    String education
+    String workExperience
+    List<Postulation> postulations
 
     static constraints = {
     }
